@@ -38,7 +38,7 @@
         <ul class="contact-list">
           <li class="contact-item">
             <a class="top-contact" href="mailto:info@devstudio.com">
-              <svg class="mail" width="16" height="12">
+              <svg class="contact-icon" width="16" height="12">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -46,7 +46,7 @@
           </li>
           <li class="contact-item">
             <a class="top-contact" href="tel:+380961111111">
-              <svg class="phone" width="10" height="16">
+              <svg class="contact-icon" width="10" height="16">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -68,6 +68,15 @@
         </div>
       </section>
 
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="btn-modal" data-modal-close>
+            <svg class="close" width="11px" height="11px">
+              <use href="./images/decoration/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!--Advantages-->
       <section class="advantages section">
         <div class="container advant">
@@ -129,12 +138,21 @@
           <ul class="work-list">
             <li class="img-item">
               <img class="work-image" src="./images/work/box1.jpg" alt="разметка" />
+              <div class="work-box">
+                <p class="work-title">Десктопные приложения</p>
+              </div>
             </li>
             <li class="img-item">
               <img class="work-image" src="./images/work/box2.jpg" alt="подбор стилей" />
+              <div class="work-box">
+                <p class="work-title">Мобильные приложения</p>
+              </div>
             </li>
             <li class="img-item">
               <img class="work-image" src="./images/work/box3.jpg" alt="подбор цветов" />
+              <div class="work-box">
+                <p class="work-title">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -298,37 +316,37 @@
         <ul class="companies-list">
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-yaco"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-tag"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-company"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-foster"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-brand"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg width="106" height="60">
+              ><svg class="company-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-comp-tag"></use></svg
             ></a>
           </li>
@@ -394,11 +412,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="btn-close" data-modal-close>&#9747;</button>
-      </div>
-    </div>
-     <script src="./js/modal.js"></script>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
